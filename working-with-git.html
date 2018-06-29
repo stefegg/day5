@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="css.css">
+    <title>Working With Git!</title>
+  </head>
+  <body>
+  <h1>Working with Git</h1>
+  <h3>1. Add files to your project</a>
+    <p>This can be done via the touch command or through the interface as usual</p>
+    <p>Example: <code>$ touch index.html && touch main.css && touch main.js</code></p>
+
+  <h3>2. Add new or modified files to staging</h3>
+  <p> Once we add new files or modify existing files, we an tell git to track them by adding them to staging for the next commit (think of commits as checkpoints). This will let git know what files the next commit will consist of.</p>
+  <p><code>$ git add < filename > </code></p>
+  <p>OR</p>
+  <p><code>$ git add .</code></p>
+
+  <p> Your files are now on stage to be included in the next commit/checkpoint.<p>
+
+    <h3>3. Add a Commit and a Commit message</h3>
+    <p>With your changes staged, you can create the checkpoint in your work with the following command:</p>
+    <code>$ git commit -m "commit message"</code>
+
+    <p>This command creates the checkpoint for git! Pretty simple.</p>
+
+  <h3>4. Push your code!</h3>
+  <p>Finally, push your changes up to Github with the following command:</p>
+  <code>$ git push </code>
+  <p> You should see the following output (or similar):</p>
+  <code>
+  <pre>
+  Counting objects: 4, done.
+  Delta compression using up to 8 threads.
+  Compressing objects: 100% (4/4), done.
+  Writing objects: 100% (4/4), 548 bytes | 548.00 KiB/s, done.
+  Total 4 (delta 0), reused 0 (delta 0)
+  To https://github.com/stefegg/day5.git</code>
+</pre>
+<p>
+  If you get an error, you may have not initialized your git repository with <code>$ git init</code><br>
+  Or you may have initialized, but you have not yet modified any files since then using:</p>
+  <code>$ git add < file name ></code> and <code>$ git commit -m "commit message"</code>
+  </body>
+</html>

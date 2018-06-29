@@ -1,10 +1,26 @@
 
 
 body {
-  /* font-family: sans-serif; */
+  font-family: sans-serif;
   width: 90%;
   background-color: black;
   color: #fff;
   margin: 0 auto;
-  padding-top: 15px;
+  padding: 25px 0px;
+}
+
+code {
+  background-color: pink;
+  color: red;
+  padding: .2px;
+  border-radius: 2px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
 }

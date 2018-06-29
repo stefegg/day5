@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Starting a new project</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  <a href="index.html">Go Back!</a>
+  <h1>Starting a new project</h1>
+  <h3>1. Create a Project folder</h3>
+
+  <p>You can use the command <code>$ mkdir (folder-name)</code> or you can do this through the interface</p>
+  <h3>2. Initialize Git Repository in project</h3>
+  <p>Navigate to the project folder inside the terminal and run the following command: <br><br><code>$ git init</code></p>
+  <p> You should see the following output:</p>
+  <code>Initialized empty Git repository in (pathname)</code>
+  <h3>3. Open a browser and go to Github and create a new repository.</h3>
+  <p>Once you create a new Repository, you will copy and paste the following commands into the terminal. These commands set the remote to point to your project folder ... </p><br>
+  <code>$ git remote add origin https://github.com/stefegg/(folder)</code>
+  <br>
+  <p> as well as starting a new branch for you to work on. This branch should be called master.</p><br>
+  <code>$ git push -u origin master</code><br>
+  <p>you can combine these by using && with spaces in between</p>
+  <h3>You're all set!</h3>
+  <p>Now read about <a href="working-with-git.html">adding files to your project and pushing your code to Github!</a></p>
+
+</body>
+
+</html>
